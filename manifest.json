@@ -1,0 +1,103 @@
+{
+    "eula": "",
+    "vendor": "SAP",
+    "license": "",
+    "id": "com.sap.sac.kpiwidget_semaforo1.x",
+    "version": "2.0.0",
+    "name": "Semaforo",
+    "newInstancePrefix": "WidgetKPIsemaforo",
+    "description": "Widget de semaforo",
+    "webcomponents": [
+      {
+        "kind": "main",
+        "tag": "kpi-tbnorte",
+        "url": "/main.js",
+        "integrity": "sha256-<generated_hash>",
+        "ignoreIntegrity": true
+      },
+      {
+        "kind": "styling",
+        "tag": "com-sap-sac-kpi-tbnorte-styling",
+        "url": "/styling.js",
+        "integrity": "sha256-<generated_hash>",
+        "ignoreIntegrity": true
+      }
+    ],
+    "properties": {
+      "title": {
+        "type": "string",
+        "default": "Título del KPI",
+        "description": "Título del KPI"
+      },
+      "amarillo": {
+        "type": "string",
+        "default": "0",
+        "description": "Texto del amarillo"
+      },
+      "information": {
+        "type": "string",
+        "default": "Actual (<span>Actual - plan</span>)",
+        "description": "Texto de la información"
+      },
+      "rojo":{
+        "type": "string",
+        "default": "0",
+        "description": "Texto del rojo"
+      }
+    },
+    "methods": {
+      "setTitle": {
+        "description": "Establecer el título del KPI",
+        "parameters": [
+          {
+            "name": "value",
+            "type": "string",
+            "description": "Valor del título"
+          }
+        ]
+      },
+      "setInformation": {
+        "description": "Establecer la información del KPI",
+        "parameters": [
+          {
+            "name": "value",
+            "type": "string",
+            "description": "Valor de la información"
+          }
+        ]
+      },
+      "setAmarillo": {
+        "description": "Establecer la información del KPI",
+        "parameters": [
+          {
+            "name": "value",
+            "type": "string",
+            "description": "Valor de la información"
+          }
+        ]
+      },
+      "setRojo":{
+        "description": "establecer el color rojo",
+        "parameters":[
+          {
+            "name": "value",
+            "type":"string",
+            "description":"establecer el color rojo"
+          }
+        ]
+      }
+    },
+    "events": {},
+    "dataBindings": {
+      "dataBinding": {
+        "feeds": [
+          {
+            "id": "measures",
+            "description": "Medidas",
+            "type": "mainStructureMember"
+          }
+        ]
+      }
+    }
+  }
+  
